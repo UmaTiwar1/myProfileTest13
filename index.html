@@ -1,3 +1,297 @@
-<h1>
-  Hello from Uma!
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f5f3ff, #e0e7ff);
+            color: #222;
+            padding: 40px 20px;
+        }
+
+        .profile {
+            max-width: 950px;
+            margin: auto;
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+        }
+
+        .hero {
+            padding: 45px;
+            background: linear-gradient(135deg, #6d5dfc, #8b5cf6);
+            color: white;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            margin: auto;
+            border-radius: 50%;
+            background: white;
+            color: #6d5dfc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 45px;
+            font-weight: bold;
+            border: 5px solid rgba(255,255,255,0.7);
+        }
+
+        .hero h1 {
+            margin-top: 20px;
+            font-size: 38px;
+        }
+
+        .hero p {
+            margin-top: 8px;
+            font-size: 17px;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 35px;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            color: #6d5dfc;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        .about {
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #f0edff;
+            color: #5b4bd8;
+            padding: 10px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .card {
+            padding: 22px;
+            background: #f8f8ff;
+            border-radius: 16px;
+            border: 1px solid #ecebff;
+        }
+
+        .card h3 {
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: white;
+            background: #6d5dfc;
+            padding: 12px 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .contact a:hover {
+            background: #5142d1;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f7f7fb;
+            color: #777;
+        }
+
+        @media (max-width: 700px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile">
+
+        <!-- Header -->
+        <div class="hero">
+            <div class="avatar">U</div>
+
+            <h1>Uma Tiwari</h1>
+            <p>Student • Developer • Creative Learner</p>
+        </div>
+
+        <div class="content">
+
+            <!-- About -->
+            <section>
+                <h2>About Me</h2>
+
+                <p class="about">
+                    Hi! I'm Uma, a college student interested in technology,
+                    programming, web development and creative projects.
+                    I enjoy learning new concepts by building practical projects
+                    and experimenting with different technologies.
+                </p>
+            </section>
+
+            <!-- Skills -->
+            <section>
+                <h2>Skills & Technologies</h2>
+
+                <div class="skills">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">React JS</span>
+                    <span class="skill">Python</span>
+                    <span class="skill">C</span>
+                    <span class="skill">SQL</span>
+                    <span class="skill">DBMS</span>
+                </div>
+            </section>
+
+            <!-- Interests -->
+            <section>
+                <h2>My Interests</h2>
+
+                <div class="cards">
+
+                    <div class="card">
+                        <h3>💻 Web Development</h3>
+                        <p>
+                            Creating websites and learning modern
+                            front-end technologies.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>🧠 Programming</h3>
+                        <p>
+                            Practicing programming, DSA and problem-solving
+                            through practical exercises.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>🎨 Creativity</h3>
+                        <p>
+                            Exploring painting, creative ideas and
+                            visually interesting projects.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section>
+                <h2>Projects & Learning</h2>
+
+                <div class="cards">
+
+                    <div class="card">
+                        <h3>Car Rental Management System</h3>
+                        <p>
+                            A DBMS project involving database design,
+                            tables, queries, joins, nested queries and triggers.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Student Course Management</h3>
+                        <p>
+                            A React JS project using components, props,
+                            state, routing and student/course management.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>DSA Practice</h3>
+                        <p>
+                            Learning searching, sorting, linked lists,
+                            stacks, queues and binary search trees.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section>
+                <h2>Connect With Me</h2>
+
+                <div class="contact">
+                    <a href="mailto:your-email@example.com">Email</a>
+                    <a href="#" onclick="showMessage()">Say Hello</a>
+                </div>
+            </section>
+
+        </div>
+
+        <footer>
+            © 2026 Uma Tiwari • Made with HTML & CSS
+        </footer>
+
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("Thanks for visiting my profile! 😊");
+        }
+    </script>
+
+</body>
+</html>
